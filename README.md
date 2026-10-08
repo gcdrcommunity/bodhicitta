@@ -13,7 +13,7 @@
 ## 注意
 
 - **網址會貼在 FB、LINE 與 Notion 活動頁上，不可更名。**
-- 報名表單換了，只要改 `index.html` 的按鈕連結與 iframe。
+- 報名表單換了，只要改 `index.html` 的按鈕連結與 iframe。表單：https://forms.gle/ku4ktVWzS15pRnF37
 - `reader/` 的經文已校正簡轉繁錯字（「雲何」→「云何」等 113 處、「相乾」→「相干」等 5 處）。
   原始資料與修正程式在本機 `03-oseling/入行論/修正版_20261009/`，不在這個 repo。
 - 《解脫莊嚴寶論》不在這裡，連到 `gcdrcommunity/dharma-masters-library`。

@@ -36,3 +36,6 @@
 
 /* Sticky mobile brand & legible large Chinese type. */
 @media(max-width:690px){.masthead{position:sticky;top:0;z-index:25;padding:10px 14px;background:rgba(255,254,251,.98)}.brand h1{font-size:17px}.brand-emblem{display:none}.lang-control{font-size:10px}.lang-control select{min-width:96px;padding:7px 3px}.verse{scroll-margin-top:71px}.tibetan-zoom{display:block;max-width:100%;cursor:zoom-in}.tibetan-zoom img{width:100%;height:auto;max-width:100%;min-width:0}.zoom-hint{font-size:11px;color:#768084}.translation.ru{margin-top:27px}.long-line{line-height:2.02}.chapter-tibetan{line-height:1.65}}
+
+/* 藏文一律用藏文字型。沒指定時會拿中文字型代打，疊字散開 */
+.chapter-tibetan,[lang=bo],:lang(bo){font-family:"Noto Serif Tibetan","Kailasa","Jomolhari","Microsoft Himalaya","Tibetan Machine Uni",serif}
