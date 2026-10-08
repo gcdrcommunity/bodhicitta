@@ -1,0 +1,76 @@
+/* 光明洲實修中心 — 菩提心｜實修・討論工作坊
+   色取自海報（米白底、深紅、褐），版面沿用 chenrezig 活動頁。只做淺色。 */
+:root{
+  --red:#8E2A23; --brown:#4A2C22; --ink:#3D332D; --grey:#76695F;
+  --paper:#F8F1E6; --card:#FFFCF7; --warm:#C9A77C; --line:rgba(74,44,34,.16);
+  --serif:"Noto Serif TC","Songti TC","Source Han Serif TC",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:light}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;
+  font-weight:400;line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word}
+img{max-width:100%;display:block}
+a{color:var(--red)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+
+/* 主視覺：整張顯示，不裁切 */
+.hero{max-width:1200px;margin:0 auto}
+.hero img{width:100%;height:auto}
+
+section{padding:40px 0}
+h1{font-size:clamp(22px,4.6vw,28px);font-weight:500;color:var(--brown);letter-spacing:.06em;line-height:1.55;margin:4px 0 6px}
+.en-sub{color:var(--grey);font-size:15px;letter-spacing:.04em}
+h2{font-size:21px;font-weight:500;color:var(--brown);letter-spacing:.1em;
+  margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(142,42,35,.28)}
+h3{font-size:18px;font-weight:600;color:var(--brown);letter-spacing:.06em;margin:24px 0 8px}
+p{margin-bottom:16px}
+ul{margin:0 0 16px 1.2em}li{margin-bottom:6px}
+.note{background:rgba(201,167,124,.15);border:1px solid rgba(201,167,124,.5);
+  border-radius:4px;padding:14px 18px;margin:18px 0;font-size:16px}
+.muted{color:var(--grey);font-size:15px}
+
+/* 資訊表 */
+.kv{width:100%;border-collapse:collapse;font-size:16px}
+.kv th{text-align:left;font-weight:500;color:var(--grey);width:4.5em;padding:10px 12px 10px 0;vertical-align:top;white-space:nowrap}
+.kv td{padding:10px 0;color:var(--brown);border-bottom:1px solid var(--line)}
+.kv tr:last-child td{border-bottom:0}
+
+/* 閱讀資料卡 */
+.books{display:grid;gap:18px}
+.book{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px 20px}
+.book .tag{font-size:13px;letter-spacing:.2em;color:var(--red)}
+.book h3{margin:4px 0 4px;font-size:20px}
+.book .by{color:var(--grey);font-size:14.5px;margin-bottom:14px}
+.book ul{list-style:none;margin:0 0 16px}
+.book li{padding-left:1em;text-indent:-1em}
+.book li::before{content:"・"}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{flex:1 1 200px;display:block;text-align:center;text-decoration:none;border:1px solid var(--red);
+  color:var(--red);border-radius:4px;padding:11px 12px;font-size:16px;letter-spacing:.06em;min-height:48px}
+.links a:hover{background:rgba(142,42,35,.06)}
+.links a.solid{background:var(--red);color:#fff}
+
+/* 主按鈕 */
+.btn{display:block;text-align:center;text-decoration:none;background:var(--red);color:#fff;
+  padding:15px 20px;border-radius:4px;font-size:18px;letter-spacing:.12em}
+.btn:hover{background:#74211b}
+.btn.ghost{background:transparent;color:var(--red);border:1px solid var(--red);margin-top:12px}
+
+/* 表單嵌入 */
+.embed{margin-top:20px;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fff}
+.embed iframe{width:100%;height:2800px;border:0;display:block}
+
+.divider{border:0;border-top:1px solid var(--line);margin:10px 0}
+.en{font-size:16px}
+.en h2{letter-spacing:.04em}
+
+footer{border-top:1px solid var(--line);margin-top:20px;padding:28px 0 44px;text-align:center;color:var(--grey);font-size:14.5px}
+footer a{color:var(--grey);display:inline-block;margin:2px 8px}
+
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:560px){
+  body{font-size:16.5px}
+  .kv th{width:3.8em;font-size:15px}.kv td{font-size:15px}
+  .embed iframe{height:3600px}
+}

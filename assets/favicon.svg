@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#FAF9F6"/>
+  <circle cx="40" cy="24" r="17" fill="#D6B480" opacity=".55"/>
+  <text x="32" y="45" font-family="Noto Serif TC, Songti TC, serif" font-size="38"
+        text-anchor="middle" fill="#1B3A52">戒</text>
+</svg>
